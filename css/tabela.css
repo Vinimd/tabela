@@ -1,0 +1,27 @@
+table {
+    margin: 1rem auto;
+    width: 95%;
+    background-color: white;
+}
+
+th {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid black;
+}
+
+td {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+.delete {
+    border: none;
+}
+
+.btn-delete {
+    background-color: transparent;
+}

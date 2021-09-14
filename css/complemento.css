@@ -1,0 +1,24 @@
+.complemento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.complemento p {
+    width: 100%;
+    text-align: center;
+}
+
+.complemento input[type=text] {
+    width: 60%;
+}
+
+.complemento input[type=radio] {
+    width: 10%;
+}
+
+.complemento label::after {
+    content: '';
+    color: transparent;
+}

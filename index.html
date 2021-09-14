@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <span data-usuarios-cadastrados></span>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Digite Seu Nome:</label>
+            <input type="text" name="nome" id="nome" autocomplete="name" autofocus>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" autocomplete="email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" name="telefone" id="telefone" autocomplete="tel">
+
+            <label for="cep">CEP:</label>
+            <input type="number" name="cep" id="cep" autocomplete="postal-code">
+
+            <label for="endereco">Rua:</label>
+            <input type="text" name="endereco" id="endereco" autocomplete="address-line1">
+
+            <label for="casa">Numero da casa:</label>
+            <input type="number" name="casa" id="casa">
+            <div class="complemento">
+                <p>Complemento:</p>
+                <input type="radio" name="verificar" id="sim" value="sim" checked>
+                <label for="sim">Sim</label>
+                <input type="radio" name="verificar" id="nao" value="nao">
+                <label for="nao">Não</label>
+                <input type="text" name="complemento" id="complemento">
+            </div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" autocomplete="">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+
+            <label for="uf">Estado:</label>
+            <input type="text" name="uf" id="uf" list="estados">
+
+            <datalist id="estados">
+                <option value="Acre">
+                <option value="Alagoas">
+                <option value="Amapá">
+                <option value="Amazonas">
+                <option value="Bahia">
+                <option value="Ceará">
+                <option value="Distrito Federal">
+                <option value="Espírito Santo">
+                <option value="Goiás">
+                <option value="Maranhão">
+                <option value="Mato Grosso">
+                <option value="Mato Grosso do Sul">
+                <option value="Minas Gerais">
+                <option value="Pará">
+                <option value="Paraíba">
+                <option value="Paraná">
+                <option value="Pernambuco">
+                <option value="Piauí">
+                <option value="Rio de Janeiro">
+                <option value="Rio Grande do Sul">
+                <option value="Rio Grande do Norte">
+                <option value="Rondônia">
+                <option value="Roraima">
+                <option value="Santa Catarina">
+                <option value="São Paulo">
+                <option value="Sergipe">
+                <option value="Tocantins">
+            </datalist>
+            <button type="button">enviar</button>
+        </form>
+    </main>
+    <script type='module' src="./js/01.script.js"></script>
+</body>
+
+</html>
